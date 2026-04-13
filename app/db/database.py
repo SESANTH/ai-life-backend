@@ -9,7 +9,7 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 
 print("Using DB:", DATABASE_URL)
 
-# 🔥 Smart handling for SQLite vs Postgres
+#  Smart handling for SQLite vs Postgres
 if DATABASE_URL.startswith("sqlite"):
     engine = create_engine(
         DATABASE_URL,
